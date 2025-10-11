@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">FeelingSafe</string>
+
+    <string name="status_safe">Status: You are Safe</string>
+    <string name="getting_location">Getting location...</string>
+    <string name="location_permission_denied">Location permission denied.</string>
+    <string name="location_not_found">Could not get location. Are your device\'s location settings enabled?</string>
+    <string name="address_not_found">Address not found for this location.</string>
+    <string name="geocoder_not_available">Geocoder service is not available.</string>
+    <string name="btn_emergency_contacts">Emergency Contacts</string>
+    <string name="btn_settings">Settings</string>
+    <string name="sos_activated">S.O.S. Button Activated!</string>
+    <string name="fall_detected">FALL DETECTED!</string>
+    <string name="sos_cancelled">S.O.S. cancelled.</string>
+    <string name="sos_sending">Time is up! Sending S.O.S....</string>
+    <string name="sms_permission_denied">SMS permission has not been granted!</string>
+    <string name="no_emergency_contacts">No emergency contacts have been added!</string>
+    <string name="sms_sending_auto">S.O.S. messages are being sent automatically...</string>
+    <string name="sms_send_error">An error occurred while sending SMS: %s</string>
+    <string name="countdown_dialog_title">Fall Detected! (%d)</string>
+    <string name="countdown_dialog_message">S.O.S. message is about to be sent...</string>
+    <string name="countdown_dialog_cancel_button">CANCEL S.O.S.</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="default_sos_message_label">Default S.O.S. Message</string>
+    <string name="default_sos_message_hint">I need help. My location is:</string>
+    <string name="default_sos_message_value">I need emergency help. My location is:</string>
+    <string name="enable_fall_detection_label">Enable Fall Detection Feature</string>
+    <string name="enable_route_logging_label">Start Route Logging (in Background)</string>
+    <string name="btn_show_route_history">Show Route History</string>
+    <string name="btn_save_settings">Save Settings</string>
+    <string name="settings_saved">Settings saved.</string>
+
+    <string name="add_contact_dialog_title">Add New Emergency Contact</string>
+    <string name="add_contact_name_hint">Name</string>
+    <string name="add_contact_phone_hint">Phone Number</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="contact_added">Contact added.</string>
+    <string name="contact_deleted">Contact deleted.</string>
+    <string name="contact_fields_cannot_be_empty">Name and phone cannot be empty.</string>
+
+    <string name="notification_title">Location Tracking Active</string>
+    <string name="notification_text">FeelingSafe app is logging your route.</string>
+
+    <string name="route_history_title">Route History</string>
+    <string name="coordinates_label">Coordinates: %.5f, %.5f</string>
+    <string name="timestamp_label">Time: %s</string>
+
+    <string name="btn_stop">STOP</string>
+
+</resources>

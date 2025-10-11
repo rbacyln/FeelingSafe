@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/primary_background"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_sos_message_label"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextSosMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:background="@color/secondary_background"
+        android:gravity="top"
+        android:hint="@string/default_sos_message_hint"
+        android:minHeight="100dp"
+        android:padding="8dp"
+        android:text="@string/default_sos_message_hint"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        tools:text="@string/default_sos_message_hint" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchFallDetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enable_fall_detection_label"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"/>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchRouteTracking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enable_route_logging_label"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonShowRouteHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_show_route_history"
+        style="?attr/materialButtonOutlinedStyle" />
+
+    <Button
+        android:id="@+id/buttonSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_save_settings"/>
+
+</LinearLayout>

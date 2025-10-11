@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#FFD3D3D3</color>
+
+    <color name="sos_red">#FFC107</color> <color name="sos_red_dark">#D32F2F</color> <color name="safe_green">#4CAF50</color> <color name="warning_yellow">#FFEB3B</color> <color name="primary_background">#FF121212</color> <color name="secondary_background">#FF333333</color> <color name="primary_text">#FFFFFFFF</color> <color name="secondary_text">#FFB3B3B3</color> </resources>
