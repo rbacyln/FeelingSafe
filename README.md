@@ -8,7 +8,7 @@
 ![Location](https://img.shields.io/badge/location-GPS%2FFused--Location-informational)
 
 ## 🔎 Overview
-FeelingSafe is a lightweight Android app for quick SOS. With one tap, you can place an emergency call or send an SMS (optionally with a Google Maps location link) to a trusted contact. Contacts are stored locally; no external servers.
+FeelingSafe is a lightweight personal safety app for Android. It lets you trigger an SOS with a single tap—either placing an emergency call or sending a prewritten SMS to a trusted contact. If location permission is granted, the SMS includes a Google Maps link to your current position so your contact can find you quickly. Trusted contacts are stored locally, the core actions work offline (calls/SMS), and no data is sent to external servers.
 
 ---
 
