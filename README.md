@@ -2,8 +2,6 @@
 
 FeelingSafe is a lightweight Android app that helps users quickly reach trusted contacts and local emergency services. Open the app → trigger SOS → share location and notify selected contacts.
 
-> Built as a student project to practice Android fundamentals (Activities, Intents, permissions, RecyclerView, Room) and clean app structure.
-
 ---
 
 ## ✨ Features
