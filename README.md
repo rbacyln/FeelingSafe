@@ -1,19 +1,4 @@
-Kesinlikle—yayınlamadan önce şu noktalara **hızlıca dokun**:
 
-1. **Şu satırı tamamen sil:** `::contentReference[oaicite:0]{index=0}` (GitHub’da görünür, gereksiz).
-2. **Kod bloklarını düzelt:** Bazı yerlerde ``` ve ```` karışmış; hepsi **üç backtick** olsun.
-3. **min/target SDK’yı doldur:** `build.gradle(.kts)` içindeki **minSdk / targetSdk** değerlerini yaz.
-4. **İzinleri doğrula:** `AndroidManifest.xml`’de **yoksa** `READ/WRITE_CONTACTS` gibi izinleri listeden çıkar.
-5. **Özellik–Roadmap ayrımı:** “Features” sadece **gerçekte çalışanları** içersin; planlı olanlar “Roadmap”te kalsın.
-6. **112 notu:** Varsayılan numara `strings.xml`’de gerçekten **112** mi? Ülkeye göre farklıysa genel bırak.
-7. **Ekran görüntüleri:** `/screenshots` yoksa bölüm ya **kalsın (sonra eklersin)** ya da şimdilik kaldır.
-8. **Lisans:** Kökte `LICENSE` dosyası yoksa “License” bölümünü **kaldır** veya dosyayı ekle (MIT iyi seçenek).
-9. **Dil/ton:** İngilizce akışı iyi; gereksiz “>” satırı (quote) istersen kaldırabilirsin.
-10. **Bağlantılar:** GitHub/LinkedIn linkleri doğru.
-
-Aşağıya **temizlenmiş ve hazır** sürümü koyuyorum (yalnızca SDK ve varsa izin/özellik eşleşmelerini güncelle):
-
-````markdown
 # FeelingSafe
 
 FeelingSafe is a lightweight Android app that helps users quickly reach trusted contacts and local emergency services. Open the app → trigger SOS → share location and notify selected contacts.
@@ -140,8 +125,3 @@ Android 6.0+ uses runtime permissions; the app should continue with limited func
 GitHub: [https://github.com/rbacyln](https://github.com/rbacyln)
 LinkedIn: [https://www.linkedin.com/in/rabia-ceylan-080966218/](https://www.linkedin.com/in/rabia-ceylan-080966218/)
 
-```
-
-İstersen “License” bölümünü de ekleyeyim ve `MIT` lisans dosyasını oluşturayım. Ayrıca min/targetSdk değerlerini istersen ben `build.gradle.kts`’ten çekip yerleştirecek şekilde düzenlerim.
-::contentReference[oaicite:0]{index=0}
-```
