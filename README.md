@@ -1,127 +1,78 @@
+````markdown
+# 🚨 FeelingSafe (Android)
 
-# FeelingSafe
+![Platform](https://img.shields.io/badge/platform-Android-brightgreen)
+![Language](https://img.shields.io/badge/language-Java-red)
+![Storage](https://img.shields.io/badge/storage-Room-blue)
+![UI](https://img.shields.io/badge/UI-RecyclerView-lightgrey)
+![Location](https://img.shields.io/badge/location-GPS%2FFused--Location-informational)
 
-FeelingSafe is a lightweight Android app that helps users quickly reach trusted contacts and local emergency services. Open the app → trigger SOS → share location and notify selected contacts.
-
-Built as a student project to practice Android fundamentals (Activities, Intents, permissions, RecyclerView, Room) and clean app structure.
-
----
-
-## ✨ Features
-
-- **One-tap SOS:** Trigger an SMS or call to a primary emergency contact.
-- **Location sharing:** Include a Google Maps link with current GPS (if permission granted).
-- **Trusted contacts:** Add, edit, and remove contacts stored locally.
-- **Quick actions:** Call local emergency numbers (e.g., 112) from the home screen.
-- **Offline-friendly:** Calls/SMS work without internet.
-- **Privacy-first:** Data stays on device; no external servers.
+## 🔎 Overview
+FeelingSafe is a lightweight Android app for quick SOS. With one tap, you can place an emergency call or send an SMS (optionally with a Google Maps location link) to a trusted contact. Contacts are stored locally; no external servers.
 
 ---
 
-## 📸 Screenshots
-
-Create a `/screenshots` folder and add images.
-
-| Home | Contacts | SOS Confirmation |
-| --- | --- | --- |
-| ![Home](screenshots/home.png) | ![Contacts](screenshots/contacts.png) | ![SOS](screenshots/sos.png) |
-
----
-
-## 🏗️ Tech Stack
-
-- **Android** (minSdk: <!-- TODO: fill -->, targetSdk: <!-- TODO: fill -->)
-- **Java** for app source
-- **Gradle** (Kotlin DSL)
-- **Room** (local storage)
-- **RecyclerView** (lists)
-- **Location APIs** (Fused Location Provider or Android Location)
+## 📁 Files
+- `app/src/main/java/.../feelingsafe/`
+  - `ui/` – Activities/Adapters (home, contacts, SOS flow)
+  - `data/` – Room DB, DAOs, `Contact` entity
+  - `util/` – helpers (permissions, location, SMS/call)
+- `app/src/main/res/` – layouts, drawables, strings  
+- `build.gradle.kts`, `settings.gradle.kts` – Gradle config
 
 ---
 
-## 📂 Project Structure (high-level)
-
-```text
-app/
-└─ src/
-   └─ main/
-      ├─ java/.../feelingsafe/
-      │  ├─ ui/        # Activities / Fragments / Adapters
-      │  ├─ data/      # Room DB, DAO, entities (Contact)
-      │  ├─ domain/    # Models, use-cases (if used)
-      │  └─ util/      # Helpers (permissions, location)
-      └─ res/          # Layouts, drawables, strings
-build.gradle.kts
-settings.gradle.kts
-````
+## 📝 Notes
+- **Core features:** one-tap SOS (call/SMS), location link in SMS, local trusted contacts, 112 quick call.
+- **Offline:** calls/SMS work without internet.
+- **Privacy:** data stays on device.
+- **SDK:** minSdk: _fill_, targetSdk: _fill_.
+- **Architecture:** simple MVVM-ish (UI → ViewModel → Repository → Room).
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-* **Android Studio** (latest stable)
-* **Android SDK** and an emulator or a physical device (Android <!-- TODO: version -->+)
-
-### Setup
-
+## ▶️ Run the App
 ```bash
 git clone https://github.com/rbacyln/FeelingSafe.git
 cd FeelingSafe
-```
+````
 
-Open in **Android Studio** → *File > Open…* → project root → let Gradle sync → **Run** (USB debugging on).
+Open in **Android Studio** → let Gradle sync → **Run** on emulator or device.
 
 ---
 
 ## 🔐 Permissions
 
-The app may request:
+* `CALL_PHONE` – emergency calls
+* `SEND_SMS` – SOS messages
+* `ACCESS_FINE_LOCATION` / `ACCESS_COARSE_LOCATION` – attach GPS
 
-* `CALL_PHONE` – place emergency calls
-* `SEND_SMS` – send SOS messages
-* `ACCESS_FINE_LOCATION` / `ACCESS_COARSE_LOCATION` – attach GPS coordinates
-
-<!-- Remove if not used:
-- `READ_CONTACTS` / `WRITE_CONTACTS` – import or manage contacts
+<!-- Remove if unused:
+- `READ_CONTACTS` / `WRITE_CONTACTS` – import/manage contacts
 -->
 
-Android 6.0+ uses runtime permissions; the app should continue with limited functionality if denied.
+Android 6.0+ uses runtime permissions; the app should degrade gracefully if denied.
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ Configure
 
-* **Default emergency number:** `res/values/strings.xml` (e.g., `112`)
-* **SOS message template:**
-  `I need help. My location: https://maps.google.com/?q=%1$s,%2$s`
-* **Location fallback:** if GPS is unavailable, send SMS without coordinates
+* Default emergency number: `res/values/strings.xml` (e.g., `112`)
+* SOS template example: `I need help. My location: https://maps.google.com/?q=%1$s,%2$s`
 
 ---
 
-## 🧪 Manual Test Checklist
+## 📸 Screenshots (optional)
 
-* Trigger **SOS** without permissions → check friendly prompts
-* Grant **Location** → SMS includes Google Maps link
-* Add contacts → verify list updates, edit/delete flows
-* Deny **SMS/Call** → no crash; show guidance
+Put images in `/screenshots`:
+`home.png`, `contacts.png`, `sos.png`
 
 ---
 
-## 🗺️ Roadmap
+## 👤 Contact
 
-* [ ] Share via other apps (WhatsApp, Telegram, etc.)
-* [ ] In-app map preview of current location
-* [ ] Panic widget / Quick Settings tile
-* [ ] Multi-language support (EN/TR)
-* [ ] Basic unit tests and instrumentation tests
+**Rabia Ceylan** · GitHub: [https://github.com/rbacyln](https://github.com/rbacyln) · LinkedIn: [https://www.linkedin.com/in/rabia-ceylan-080966218/](https://www.linkedin.com/in/rabia-ceylan-080966218/)
 
----
-
-## 🙋‍♀️ Contact
-
-**Rabia Ceylan**
-GitHub: [https://github.com/rbacyln](https://github.com/rbacyln)
-LinkedIn: [https://www.linkedin.com/in/rabia-ceylan-080966218/](https://www.linkedin.com/in/rabia-ceylan-080966218/)
-
+```
+::contentReference[oaicite:0]{index=0}
+```
