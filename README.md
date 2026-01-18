@@ -62,13 +62,6 @@ Android 6.0+ uses runtime permissions; the app should degrade gracefully if deni
 
 ---
 
-## 📸 Screenshots (optional)
-
-Put images in `/screenshots`:
-`home.png`, `contacts.png`, `sos.png`
-
----
-
 ## 👤 Contact
 
 **Rabia Ceylan** · GitHub: [https://github.com/rbacyln](https://github.com/rbacyln) · LinkedIn: [https://www.linkedin.com/in/rabia-ceylan-080966218/](https://www.linkedin.com/in/rabia-ceylan-080966218/)
